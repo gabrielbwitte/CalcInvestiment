@@ -7,8 +7,21 @@
     <title>Calc Investimento</title>
   </head>
   <body class="h-[100dvh] grid grid-cols-3 grid-rows-2">
-    <aside class="bg-red-950">
-      <h1 class="">Calculadora de investimento</h1>
+    <aside class="bg-emerald-300 row-span-2 flex flex-col justify-between py-5 px-2">
+      <h1 class="text-2xl font-bold px-6">Calculadora de investimento</h1>
+      <form class="w-full">
+        <div class="flex w-full">
+          <input value="R$"  class="w-1/6" type="text" disabled>
+          <input type="text" class="w-1/2" id="starting-amaout">
+          <input type="text" class="w-2/6" value="mensal">
+        </div>
+
+      </form>
+      <div>
+        <button>Calcular</button>
+        <button>Limpar</button>
+        
+      </div>
     </aside>
     <main>
       <p>Resultados</p>
