@@ -28,7 +28,7 @@
         <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="time-amount" class="font-bold text-gray-700">Prazo</label>
           <div class="flex">
-            <input type="text" class="w-2/3 rounded-l-lg px-2" id="time-amount" required placeholder="360">
+            <input type="text" class="w-2/3 rounded-l-lg px-2" id="time-amount" name="time-amount" required placeholder="360">
             <select id="time-amount-period" name="time-amount-period" class="w-1/2 rounded-r-lg border-emerald-600 text-center hover:bg-emerald-950 hover:text-slate-200">
               <option value="monthly">Mesal</option>
               <option value="yearly">Anual</option>
@@ -56,7 +56,7 @@
       </form>
       <div class="flex h-12 px-6 my-8 w-full gap-2">
         <button id="calculate-results" form="investment-form" type="submit" class="w-1/2 rounded-lg bg-emerald-950 text-slate-200 hover:bg-emerald-900">Calcular</button>
-        <button class="w-1/2 rounded-lg  hover:bg-emerald-500">Limpar</button>
+        <button id="clear-form" class="w-1/2 rounded-lg  hover:bg-emerald-500">Limpar</button>
       </div>
     </aside>
     <main>
